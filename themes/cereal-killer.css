@@ -1,0 +1,78 @@
+/* Cereal Killer: phosphor green on black, with a pale green-paper light mode. Status colours stay apart from the accent: --positive is teal-mint, so "chrome" green is never confused with "good". */
+[data-theme="cereal-killer"] {
+  color-scheme: dark;
+  --bg: hsl(140 40% 3%);
+  --surface-1: hsl(140 35% 6%);
+  --surface-2: hsl(140 30% 9%);
+  --surface-3: hsl(140 25% 13%);
+  --border: hsl(140 35% 18%);
+  --border-bright: hsl(140 45% 28%);
+  --text-primary: hsl(130 50% 92%);
+  --text-secondary: hsl(135 25% 66%);
+  --text-muted: hsl(138 20% 44%);
+  --accent: hsl(135 100% 50%);
+  --accent-dim: hsl(135 80% 28%);
+  --positive: hsl(172 85% 52%);
+  --negative: hsl(0 90% 60%);
+  --warning: hsl(45 100% 55%);
+  --neutral: hsl(140 12% 60%);
+  --grid: hsl(140 30% 11%);
+  --scan: rgba(0, 255, 70, 0.03);
+  --glow-accent: 0 0 10px rgba(0, 255, 70, 0.5);
+  --glow-positive: 0 0 12px rgba(31, 240, 205, 0.35);
+  --glow-negative: 0 0 12px rgba(250, 70, 70, 0.3);
+  --glow-logo: drop-shadow(0 0 6px rgba(0, 255, 70, 0.55));
+  --shadow-overlay: 0 0 20px rgba(0, 255, 70, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="cereal-killer"]:not([data-mode="dark"]) {
+    color-scheme: light;
+    --bg: hsl(120 20% 96%);
+    --surface-1: hsl(120 25% 99%);
+    --surface-2: hsl(130 12% 91%);
+    --surface-3: hsl(130 10% 86%);
+    --border: hsl(130 10% 80%);
+    --border-bright: hsl(130 10% 62%);
+    --text-primary: hsl(140 30% 7%);
+    --text-secondary: hsl(140 15% 28%);
+    --text-muted: hsl(140 8% 42%);
+    --accent: hsl(140 85% 27%);
+    --accent-dim: hsl(140 45% 62%);
+    --positive: hsl(172 80% 26%);
+    --negative: hsl(0 75% 42%);
+    --warning: hsl(36 90% 30%);
+    --neutral: hsl(140 8% 40%);
+    --grid: hsl(130 10% 89%);
+    --scan: rgba(10, 130, 50, 0.02);
+    --glow-accent: none;
+    --glow-positive: none;
+    --glow-negative: none;
+    --glow-logo: none;
+    --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+[data-theme="cereal-killer"][data-mode="light"] {
+  color-scheme: light;
+  --bg: hsl(120 20% 96%);
+  --surface-1: hsl(120 25% 99%);
+  --surface-2: hsl(130 12% 91%);
+  --surface-3: hsl(130 10% 86%);
+  --border: hsl(130 10% 80%);
+  --border-bright: hsl(130 10% 62%);
+  --text-primary: hsl(140 30% 7%);
+  --text-secondary: hsl(140 15% 28%);
+  --text-muted: hsl(140 8% 42%);
+  --accent: hsl(140 85% 27%);
+  --accent-dim: hsl(140 45% 62%);
+  --positive: hsl(172 80% 26%);
+  --negative: hsl(0 75% 42%);
+  --warning: hsl(36 90% 30%);
+  --neutral: hsl(140 8% 40%);
+  --grid: hsl(130 10% 89%);
+  --scan: rgba(10, 130, 50, 0.02);
+  --glow-accent: none;
+  --glow-positive: none;
+  --glow-negative: none;
+  --glow-logo: none;
+  --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+}

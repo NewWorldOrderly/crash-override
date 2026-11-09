@@ -20,14 +20,14 @@ Open `preview.html` in a browser to see every theme and mode.
 
 ## Built-in themes
 
-Named for the characters of *Hackers* (1995). Each has a dark and a light mode.
+Named for the characters of *Hackers* (1995). Every theme has a dark and a light mode. In the red and green themes the status colours are deliberately a different hue from the accent (`--negative` is orange-red in Acid Burn, `--positive` is teal-mint in Cereal Killer), so "chrome" and "good/bad" never share a colour.
 
 | Theme | Look |
 |---|---|
 | `zero-cool` | Cyan phosphor on near-black. Light mode is a "paper terminal". |
 | `gibson` | Amber/orange phosphor on warm black. |
-| `acid-burn` | Violet on deep purple-grey, softer corners. |
-| `serial-killer` | *Planned.* |
+| `acid-burn` | Crimson red on blood-black. Light mode is rose paper. |
+| `cereal-killer` | Phosphor green on black. Light mode is green-tinged paper. |
 
 ## The token contract
 
