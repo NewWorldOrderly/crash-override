@@ -54,7 +54,7 @@ whatever your app is about. Colours specific to your app belong in your app, bui
 
 ## Status
 
-Tokens and themes only. Components (buttons, cards, tables, dialogs) will be added as real
+Tokens and themes only; in use by two private dashboards (Gibson and ZeroCool), which serve this repo's CSS from a local checkout. Components (buttons, cards, tables, dialogs) will be added as real
 screens need them, as plain CSS classes first.
 
 ## Licence
