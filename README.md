@@ -28,6 +28,8 @@ Named for the characters of *Hackers* (1995). Every theme has a dark and a light
 | `gibson` | Amber/orange phosphor on warm black. |
 | `acid-burn` | Crimson red on blood-black. Light mode is rose paper. |
 | `cereal-killer` | Phosphor green on black. Light mode is green-tinged paper. |
+| `phantom-phreak` | Electric violet on ink-black. Light mode is lavender paper. |
+| `lord-nikon` | Pure neutrals: black, white and greys. Status colours are the only colour. |
 
 ## The token contract
 

@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="themes/gibson.css">
 <link rel="stylesheet" href="themes/acid-burn.css">
 <link rel="stylesheet" href="themes/cereal-killer.css">
+<link rel="stylesheet" href="themes/phantom-phreak.css">
+<link rel="stylesheet" href="themes/lord-nikon.css">
 <style>
   body{margin:0;background:var(--bg);color:var(--text-primary);font:var(--text-md)/var(--leading) var(--font-body);padding:var(--space-5)}
   h1{font-size:var(--text-lg);color:var(--accent);text-transform:uppercase;letter-spacing:var(--tracking-wide);text-shadow:var(--glow-accent)}
@@ -23,7 +25,7 @@
 <div class="grid" id="sw"></div>
 <script>
   const root = document.documentElement;
-  const themes = ["zero-cool","gibson","acid-burn","cereal-killer"], modes = ["system","dark","light"];
+  const themes = ["zero-cool","gibson","acid-burn","cereal-killer","phantom-phreak","lord-nikon"], modes = ["system","dark","light"];
   const tokens = ["bg","surface-1","surface-2","surface-3","border","border-bright","accent","accent-dim","positive","negative","warning","neutral"];
   function btns(id, list, fn, cur){const el=document.getElementById(id);el.innerHTML="";
     list.forEach(v=>{const b=document.createElement("button");b.textContent=v;b.setAttribute("aria-pressed",v===cur);b.onclick=()=>{fn(v);};el.appendChild(b);});}

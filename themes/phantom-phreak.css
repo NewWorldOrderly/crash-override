@@ -1,0 +1,78 @@
+/* Phantom Phreak: electric violet on ink-black, with a lavender-paper light mode. Status colours stay apart from the accent (red negative, green positive). */
+[data-theme="phantom-phreak"] {
+  color-scheme: dark;
+  --bg: hsl(270 40% 4%);
+  --surface-1: hsl(270 35% 7%);
+  --surface-2: hsl(270 30% 10%);
+  --surface-3: hsl(270 26% 14%);
+  --border: hsl(270 32% 21%);
+  --border-bright: hsl(270 40% 34%);
+  --text-primary: hsl(270 50% 95%);
+  --text-secondary: hsl(270 22% 72%);
+  --text-muted: hsl(270 16% 50%);
+  --accent: hsl(270 95% 68%);
+  --accent-dim: hsl(270 65% 40%);
+  --positive: hsl(150 75% 50%);
+  --negative: hsl(2 90% 62%);
+  --warning: hsl(45 100% 55%);
+  --neutral: hsl(270 12% 64%);
+  --grid: hsl(270 30% 12%);
+  --scan: rgba(170, 90, 255, 0.03);
+  --glow-accent: 0 0 10px rgba(170, 90, 255, 0.5);
+  --glow-positive: 0 0 12px rgba(32, 223, 130, 0.35);
+  --glow-negative: 0 0 12px rgba(250, 80, 70, 0.3);
+  --glow-logo: drop-shadow(0 0 6px rgba(170, 90, 255, 0.55));
+  --shadow-overlay: 0 0 20px rgba(170, 90, 255, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="phantom-phreak"]:not([data-mode="dark"]) {
+    color-scheme: light;
+    --bg: hsl(270 30% 97%);
+    --surface-1: hsl(270 40% 99%);
+    --surface-2: hsl(270 16% 93%);
+    --surface-3: hsl(270 12% 88%);
+    --border: hsl(270 12% 83%);
+    --border-bright: hsl(270 12% 67%);
+    --text-primary: hsl(270 30% 8%);
+    --text-secondary: hsl(270 15% 30%);
+    --text-muted: hsl(270 8% 45%);
+    --accent: hsl(270 70% 42%);
+    --accent-dim: hsl(270 50% 72%);
+    --positive: hsl(150 70% 26%);
+    --negative: hsl(2 75% 42%);
+    --warning: hsl(36 90% 30%);
+    --neutral: hsl(270 8% 42%);
+    --grid: hsl(270 12% 91%);
+    --scan: rgba(110, 50, 190, 0.02);
+    --glow-accent: none;
+    --glow-positive: none;
+    --glow-negative: none;
+    --glow-logo: none;
+    --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+[data-theme="phantom-phreak"][data-mode="light"] {
+  color-scheme: light;
+  --bg: hsl(270 30% 97%);
+  --surface-1: hsl(270 40% 99%);
+  --surface-2: hsl(270 16% 93%);
+  --surface-3: hsl(270 12% 88%);
+  --border: hsl(270 12% 83%);
+  --border-bright: hsl(270 12% 67%);
+  --text-primary: hsl(270 30% 8%);
+  --text-secondary: hsl(270 15% 30%);
+  --text-muted: hsl(270 8% 45%);
+  --accent: hsl(270 70% 42%);
+  --accent-dim: hsl(270 50% 72%);
+  --positive: hsl(150 70% 26%);
+  --negative: hsl(2 75% 42%);
+  --warning: hsl(36 90% 30%);
+  --neutral: hsl(270 8% 42%);
+  --grid: hsl(270 12% 91%);
+  --scan: rgba(110, 50, 190, 0.02);
+  --glow-accent: none;
+  --glow-positive: none;
+  --glow-negative: none;
+  --glow-logo: none;
+  --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
