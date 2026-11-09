@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>crash-override preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tokens/core.css">
+<link rel="stylesheet" href="themes/zero-cool.css">
+<link rel="stylesheet" href="themes/gibson.css">
+<link rel="stylesheet" href="themes/acid-burn.css">
+<style>
+  body{margin:0;background:var(--bg);color:var(--text-primary);font:var(--text-md)/var(--leading) var(--font-body);padding:var(--space-5)}
+  h1{font-size:var(--text-lg);color:var(--accent);text-transform:uppercase;letter-spacing:var(--tracking-wide);text-shadow:var(--glow-accent)}
+  .bar{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-4)}
+  button{font:inherit;background:var(--surface-1);color:var(--text-secondary);border:var(--border-width) solid var(--border);border-radius:var(--radius);padding:var(--space-2) var(--space-4);cursor:pointer}
+  button[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--space-2)}
+  .sw{border:var(--border-width) solid var(--border-bright);border-radius:var(--radius);padding:var(--space-3);font-size:var(--text-xs)}
+</style>
+<h1>crash-override</h1>
+<div class="bar" id="themes"></div>
+<div class="bar" id="modes"></div>
+<div class="grid" id="sw"></div>
+<script>
+  const root = document.documentElement;
+  const themes = ["zero-cool","gibson","acid-burn"], modes = ["system","dark","light"];
+  const tokens = ["bg","surface-1","surface-2","surface-3","border","border-bright","accent","accent-dim","positive","negative","warning","neutral"];
+  function btns(id, list, fn, cur){const el=document.getElementById(id);el.innerHTML="";
+    list.forEach(v=>{const b=document.createElement("button");b.textContent=v;b.setAttribute("aria-pressed",v===cur);b.onclick=()=>{fn(v);};el.appendChild(b);});}
+  let theme=themes[0], mode="system";
+  function render(){
+    root.dataset.theme=theme; mode==="system"?root.removeAttribute("data-mode"):root.dataset.mode=mode;
+    btns("themes",themes,v=>{theme=v;render()},theme); btns("modes",modes,v=>{mode=v;render()},mode);
+    document.getElementById("sw").innerHTML=tokens.map(t=>`<div class="sw" style="background:var(--${t});color:var(--${t==='bg'||t.startsWith('surface')?'text-primary':'bg'})">--${t}</div>`).join("");
+  }
+  render();
+</script>

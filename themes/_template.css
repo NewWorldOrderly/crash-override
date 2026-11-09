@@ -1,0 +1,55 @@
+/* Template: copy this file, rename it, and change the values.
+   1. Replace every "my-theme" with your theme's name (lowercase, hyphens).
+   2. Set all the variables in all three blocks: dark, light-by-system, light-by-attribute.
+   3. Run:  python3 scripts/check_theme.py themes/my-theme.css
+   4. Use it:  <html data-theme="my-theme">  (add data-mode="light" or "dark" to force a mode).
+   Any core token from tokens/core.css (--radius, --font-body, ...) can also be overridden here. */
+[data-theme="my-theme"] {
+  color-scheme: dark;
+  --bg: #000000;
+  --surface-1: #0a0a0a;
+  --surface-2: #141414;
+  --surface-3: #1e1e1e;
+  --border: #2a2a2a;
+  --border-bright: #444444;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #777777;
+  --accent: #4da3ff;
+  --accent-dim: #1f5fa6;
+  --positive: #3ddc84;
+  --negative: #ff5555;
+  --warning: #ffc400;
+  --neutral: #9aa0a6;
+  --grid: #1a1a1a;
+  --scan: rgba(255, 255, 255, 0.02);   /* faint overlay lines; use transparent to disable */
+  --glow-accent: none;
+  --glow-positive: none;
+  --glow-negative: none;
+  --glow-logo: none;
+  --shadow-overlay: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="my-theme"]:not([data-mode="dark"]) {
+    color-scheme: light;
+    --bg: #ffffff; --surface-1: #fafafa; --surface-2: #f0f0f0; --surface-3: #e6e6e6;
+    --border: #dddddd; --border-bright: #bbbbbb;
+    --text-primary: #111111; --text-secondary: #444444; --text-muted: #777777;
+    --accent: #0b5cad; --accent-dim: #7fb2e5;
+    --positive: #1a7a45; --negative: #c0261a; --warning: #8a5a00; --neutral: #666666;
+    --grid: #eeeeee; --scan: transparent;
+    --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+    --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+[data-theme="my-theme"][data-mode="light"] {
+  color-scheme: light;
+  --bg: #ffffff; --surface-1: #fafafa; --surface-2: #f0f0f0; --surface-3: #e6e6e6;
+  --border: #dddddd; --border-bright: #bbbbbb;
+  --text-primary: #111111; --text-secondary: #444444; --text-muted: #777777;
+  --accent: #0b5cad; --accent-dim: #7fb2e5;
+  --positive: #1a7a45; --negative: #c0261a; --warning: #8a5a00; --neutral: #666666;
+  --grid: #eeeeee; --scan: transparent;
+  --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+  --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+}

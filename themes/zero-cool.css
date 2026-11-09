@@ -1,0 +1,51 @@
+/* Zero Cool: cyan phosphor on near-black, with a "paper terminal" light mode.
+   Extracted from the ZeroCool dashboard. */
+[data-theme="zero-cool"] {
+  color-scheme: dark;
+  --bg: #04070a;
+  --surface-1: #080f13;
+  --surface-2: #0d1a20;
+  --surface-3: #12252c;
+  --border: #17383f;
+  --border-bright: #1f5561;
+  --text-primary: #d8f3f5;
+  --text-secondary: #7fb0b5;
+  --text-muted: #4d757b;
+  --accent: #22d3ee;
+  --accent-dim: #0e7490;
+  --positive: #00ff6a;
+  --negative: #ff4d4d;
+  --warning: #ffc400;
+  --neutral: #7fb0b5;
+  --grid: #12262c;
+  --scan: rgba(34, 211, 238, 0.03);
+  --glow-accent: 0 0 10px rgba(34, 211, 238, 0.5);
+  --glow-positive: 0 0 12px rgba(0, 255, 106, 0.35);
+  --glow-negative: 0 0 12px rgba(255, 77, 77, 0.3);
+  --glow-logo: drop-shadow(0 0 6px rgba(34, 211, 238, 0.55));
+  --shadow-overlay: 0 0 20px rgba(34, 211, 238, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="zero-cool"]:not([data-mode="dark"]) {
+    color-scheme: light;
+    --bg: #f3f3ef; --surface-1: #fbfbf8; --surface-2: #e9eae6; --surface-3: #dfe2de;
+    --border: #d3d7d1; --border-bright: #aab0a9;
+    --text-primary: #12171a; --text-secondary: #4a5457; --text-muted: #78817f;
+    --accent: #0b6d86; --accent-dim: #4a9fb3;
+    --positive: #0a7a3d; --negative: #c02626; --warning: #8a5a00; --neutral: #4a5457;
+    --grid: #e4e6e1; --scan: rgba(11, 109, 134, 0.02);
+    --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+    --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+[data-theme="zero-cool"][data-mode="light"] {
+  color-scheme: light;
+  --bg: #f3f3ef; --surface-1: #fbfbf8; --surface-2: #e9eae6; --surface-3: #dfe2de;
+  --border: #d3d7d1; --border-bright: #aab0a9;
+  --text-primary: #12171a; --text-secondary: #4a5457; --text-muted: #78817f;
+  --accent: #0b6d86; --accent-dim: #4a9fb3;
+  --positive: #0a7a3d; --negative: #c02626; --warning: #8a5a00; --neutral: #4a5457;
+  --grid: #e4e6e1; --scan: rgba(11, 109, 134, 0.02);
+  --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+  --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+}

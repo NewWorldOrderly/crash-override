@@ -1,0 +1,52 @@
+/* Gibson: amber/orange phosphor on warm black, with a warm paper light mode.
+   Extracted from the Gibson dashboard. --warning was not in the original
+   palette; it is a new amber chosen to sit apart from the orange accent. */
+[data-theme="gibson"] {
+  color-scheme: dark;
+  --bg: #0a0705;
+  --surface-1: #120d08;
+  --surface-2: #1c130b;
+  --surface-3: #281a0f;
+  --border: #3d2512;
+  --border-bright: #633c19;
+  --text-primary: #f7e8d8;
+  --text-secondary: #bd9670;
+  --text-muted: #8b6947;
+  --accent: #ff8c1a;
+  --accent-dim: #a35a0d;
+  --positive: #35d97e;
+  --negative: #ff4436;
+  --warning: #ffd23a;
+  --neutral: #7d8f9c;
+  --grid: #241708;
+  --scan: rgba(255, 140, 26, 0.028);
+  --glow-accent: 0 0 10px rgba(255, 140, 26, 0.45);
+  --glow-positive: 0 0 12px rgba(53, 217, 126, 0.3);
+  --glow-negative: 0 0 12px rgba(255, 68, 54, 0.35);
+  --glow-logo: drop-shadow(0 0 7px rgba(255, 140, 26, 0.5));
+  --shadow-overlay: 0 0 20px rgba(255, 140, 26, 0.45);
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="gibson"]:not([data-mode="dark"]) {
+    color-scheme: light;
+    --bg: #f6f2ec; --surface-1: #fdfbf7; --surface-2: #ece5da; --surface-3: #e0d7c8;
+    --border: #d6cbb9; --border-bright: #ab9a80;
+    --text-primary: #1a1410; --text-secondary: #5a4a3a; --text-muted: #857462;
+    --accent: #b4530a; --accent-dim: #d08a4a;
+    --positive: #1a7a45; --negative: #c0261a; --warning: #8a6a00; --neutral: #566773;
+    --grid: #e6ded1; --scan: rgba(180, 83, 10, 0.018);
+    --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+    --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+[data-theme="gibson"][data-mode="light"] {
+  color-scheme: light;
+  --bg: #f6f2ec; --surface-1: #fdfbf7; --surface-2: #ece5da; --surface-3: #e0d7c8;
+  --border: #d6cbb9; --border-bright: #ab9a80;
+  --text-primary: #1a1410; --text-secondary: #5a4a3a; --text-muted: #857462;
+  --accent: #b4530a; --accent-dim: #d08a4a;
+  --positive: #1a7a45; --negative: #c0261a; --warning: #8a6a00; --neutral: #566773;
+  --grid: #e6ded1; --scan: rgba(180, 83, 10, 0.018);
+  --glow-accent: none; --glow-positive: none; --glow-negative: none; --glow-logo: none;
+  --shadow-overlay: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
